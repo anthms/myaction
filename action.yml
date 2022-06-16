@@ -1,4 +1,4 @@
-name: PowerShell script
+name: Bash script
 author: anthms
 inputs:
   secretsJson:
@@ -9,4 +9,4 @@ runs:
   using: composite
   steps:
     - run: echo '-secretsJson ${{ inputs.secretsJson }}'
-      shell: PowerShell
+      shell: bash
