@@ -1,0 +1,12 @@
+name: PowerShell script
+author: anthms
+inputs:
+  secretsJson:
+    description: Secrets from repository in compressed Json format
+    required: false
+    default: 'default text'
+runs:
+  using: composite
+  steps:
+    - run: echo '-secretsJson ${{ inputs.secretsJson }}'
+      shell: PowerShell
