@@ -10,3 +10,11 @@ runs:
   steps:
     - run: echo '-secretsJson ${{ inputs.secretsJson }}'
       shell: bash
+    - run: echo '-secretsJson ${{ inputs.secretsJson }}'
+      shell: pwsh
+    - run: echo '-secretsJson ${{ inputs.secretsJson }}'
+      shell: python
+    - run: echo '-secretsJson ${{ inputs.secretsJson }}'
+      shell: cmd
+    - run: echo '-secretsJson ${{ inputs.secretsJson }}'
+      shell: powershell
